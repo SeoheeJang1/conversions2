@@ -18,3 +18,12 @@ degC = linspace(0,100,101);
 plot(degC, celsius_to_fahrenheit(degC))
 xlabel('Celsius')
 ylabel('Fahrenheit')
+% Plot Fahrenheit vs Celsius
+degC = linspace(0,100,101);
+plot(degC, celsius_to_fahrenheit(degC))
+hold on
+degK = linspace(273, 373, 101);
+plot(kelvin_to_celsius(degK), degK)
+xlabel('Celsius')
+ylabel('Conversion')
+legend('Fahrenheit', 'Kelvin', 'location', 'northwest')

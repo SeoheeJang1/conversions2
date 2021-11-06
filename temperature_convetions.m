@@ -13,3 +13,8 @@ fprintf('Absolute zero is %g%sF.\n', celsius_to_fahrenheit(kelvin_to_celsius(0))
 fprintf('33 %sN is %g%sC.\n', deg, newton_to_celsius(33), deg)
 
 %sadfafasdf
+% Plot Fahrenheit vs Celsius
+degC = linspace(0,100,101);
+plot(degC, celsius_to_fahrenheit(degC))
+xlabel('Celsius')
+ylabel('Fahrenheit')
